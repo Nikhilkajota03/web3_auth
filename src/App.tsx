@@ -84,6 +84,10 @@ function App() {
     uiConsole("logged out");
   };
 
+
+
+
+
   // IMP START - Blockchain Calls
   const getAccounts = async () => {
     if (!provider) {
@@ -95,7 +99,16 @@ function App() {
     // Get user's Ethereum public address
     const address = await web3.eth.getAccounts();
     uiConsole(address);
+
+
+     console.log(address,"-=--==-===-=---=-=-=-=")
+
   };
+
+
+
+
+
 
   const getBalance = async () => {
     if (!provider) {
